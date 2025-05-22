@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+<div class="shadow-wrap">
+  <div class="form-wrap">
+    <h3>
+      Signup
+    </h3>
+    <form method="POST" novalidate>
+      {% csrf_token %}
+
+      <label for="id_first_name" class="first_namefield">First Name:</label>
+      {{ form_key.first_name}}
+      {% for error in form_key.first_name.errors %}
+        <p class="form-error">{{ error }}</p>
+      {% endfor %}
+
+      <label for="id_last_name" class="last_namefield">Last Name:</label>
+      {{ form_key.last_name}}
+      {% for error in form_key.last_name.errors %}
+        <p class="form-error">{{ error }}</p>
+      {% endfor %}                                                                                                                                                                                                                    
+
+      <label for="id_email" class="emailfield">Email:</label>
+      {{ form_key.email}}
+      {% for error in form_key.email.errors %}
+        <p class="form-error">{{ error }}</p>
+      {% endfor %}
+
+      <label for="id_password1" class="pass1field">Password:</label>
+      {{ form_key.password1}}
+      {% for error in form_key.password1.errors %}
+        <p class="form-error">{{ error }}</p>
+      {% endfor %}
+
+      <label for="id_password2" class="pass2field">Confirm Password:</label>
+      {{form_key.password2}}
+      {% for error in form_key.password2.errors %}
+        <p class="form-error">{{ error }}</p>
+      {% endfor %}
+
+      <button type="submit" value="Submit" class="form-button">
+      Signup
+     </button><br>
+
+      <h4 class="account">Already have an account?</h4>
+      <a class="login-link" href="{% url 'baseapp:login' %}">
+      Login
+      </a>
+    </form>
+
+    
+    
+  </div>
+</div>
+
+{% endblock content %}
+
+
+
+

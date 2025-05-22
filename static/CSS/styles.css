@@ -1,0 +1,96 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Mulish', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  align-items: center;
+  height: 100vh;
+}
+
+.shadow-wrap {
+  border-radius: 5px;
+  padding: 25px;
+  background-color: #f0f2fb ;
+}
+
+.form-wrap {
+  background-color: #fff;
+  padding: 120px 70px;
+}
+
+.form-wrap form *{
+  display: block;
+  width: 100%;
+}
+
+.form-wrap form label {
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.form-wrap form input {
+  padding: 12px 20px;
+  border-radius: 5px;
+  border: 1px solid #DAE1F5;
+  background-color: #fff;
+  color: #545d7a;
+}
+
+.form-wrap button {
+  border-radius: 5px; 
+  background-color: #10182f;
+  color: #FFF;
+  text-align: center;
+  font-size: 16px;
+  padding: 12px 68px;
+  font-weight: 700;
+  border: none;
+  line-height: 26px;
+  margin-top: 30px;
+}
+
+.form-error {
+  color: red;
+  margin: 5px;
+}
+
+.signup-link {
+  color: #10182f;
+  font-size: 15px;
+  display: inline-block;
+  line-height: 25px;
+  margin-top: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.signup-link:hover {
+  text-decoration: underline;
+}
+
+.login-link {
+  color: #10182f;
+  font-size: 15px;
+  display: inline;
+  line-height: 25px;
+  margin-top: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+}
+
+.account {
+  display: inline-block;
+  margin-top: 10px;
+}
